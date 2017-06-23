@@ -11,3 +11,44 @@ a{
 img{
     border:0;
 }
+#header{
+    height: 250px;
+    background: url("img/banner33.jpg") no-repeat center center;
+}
+.wrapper{
+    width: 1140px;
+    margin:0 auto;
+
+}
+#cart,#login,#login{
+    width: 380px;
+    height: 100px;
+    line-height: 100px;
+}
+#login a{
+    color: #FFF;
+}
+#shop{
+    color: #FFF;
+    text-align:center;
+}
+#cart{
+    width: 288px;
+    height: 50px;
+    background: #000;
+    text-align: center;
+    line-height: 50px;
+    float: right;
+    margin-top: 25px;
+    opacity: .6;
+    filter: alpha(opacity=60);
+    cursor: pointer;
+}
+#menu{
+    height: 30px;
+    clear: both;
+}
+#menu li{
+    float: left;
+    
+}

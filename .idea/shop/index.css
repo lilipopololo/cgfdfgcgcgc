@@ -1,0 +1,16 @@
+#single-pic{
+    width: 494px;
+    height: 596px;
+    overflow: hidden;
+}
+#single-decoration{
+    width: 570px;
+    height: 621px;
+}
+#big-pic{
+    border: 2px solid #ccc;
+    height: 400px;
+}
+#small-pic{
+    
+}
