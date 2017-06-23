@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	li{
+		list-style:none;
+	}
+	a{
+		text-decoration: none;
+	}
+	#container{
+		width: 400px;
+		height: 200px;
+		margin: 100px auto;
+		background: #ccc;
+	}
+	#nav{
+		height: 30px;
+		border-bottom: 1px solid #000;
+	}
+	#nav li{
+		line-height: 30px;
+		width: 120px;
+		text-align: center;
+		float: left;
+		color: #000;
+		margin-right: 5px;
+		cursor: pointer;
+	}
+	#nav li.selected{
+		background: #000;
+		color: #FFF;
+	}
+	#contain div{
+		display: none;
+	}
+	#contain div.select{
+		display: block;
+	}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<ul id="nav">
+			<li class="selected">html</li>
+			<li>css</li>
+			<li>js</li>
+		</ul>
+		<div id="contain">
+			<div class="select">111</div>
+			<div>222</div>
+			<div>333</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var oNav=document.getElementById("nav");
+		var aLi=oNav.getElementsByTagName("li");
+		var oCon=document.getElementById("contain");
+		var  aDiv=oCon.getElementsByTagName("div");
+		for(var i=0; i<aLi.length;i++){
+			aLi[i].index=i;
+			aLi[i].onclick=function(){
+				for(var i=0; i<aLi.length;i++){
+				aLi[i].className="";
+				aDiv[i].className="";
+			}
+				this.className="selected";
+				aDiv[this.index].className="select";
+
+			}
+		}
+	</script>
+</body>
+</html>
